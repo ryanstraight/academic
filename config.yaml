@@ -1,6 +1,6 @@
 theme: starter-academic
 title: Academic
-baseurl: ''
+baseurl: 'https://dev.ryanstraight.com'
 copyright: ''
 enableGitInfo: no
 defaultContentLanguage: en
