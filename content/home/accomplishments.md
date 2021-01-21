@@ -10,7 +10,7 @@ headless: true
 weight: 50
 
 # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
-title: 'Accomplish&shy;ments'
+title: 'Awards & Fellowships'
 subtitle:
 
 # Date format
@@ -23,28 +23,19 @@ date_format: Jan 2006
 #   Leave other parameters empty if not required.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 item:
-- certificate_url: https://www.coursera.org
+- organization: University of Arizona
+  organization_urlL: https://arizona.edu
+  title: Faculty Fellow (Ongoing)
+  url: http://saem-aiss.arizona.edu/sr-vp/faculty-programs/faculty-fellows
+  date_start: "2017-08-01"
   date_end: ""
-  date_start: "2018-10-01"
-  description: ""
-  organization: Coursera
-  organization_url: https://www.coursera.org
-  title: Neural Networks and Deep Learning
-  url: ""
-- certificate_url: https://www.edx.org
+  description: "Faculty Fellows is a group of 55 outstanding UA faculty dedicated to student engagement. Faculty Fellows work to effectively involve students in research, collaborative projects, career-readiness efforts and community outreach. Each Fellow is assigned a campus site for the academic year (whether a residence hall, a cultural center, or a resource center) and spends time at that site each week, building connections and relationships with students outside of the classroom."
+- organization: Online Learning Consortium
+  organization_url: https://onlinelearningconsortium.org/
+  title: Effective Practice Award
+  url: https://ryanstraight.github.io/SGN2
+  certificate_url: https://secure.onlinelearningconsortium.org/effective_practices/squadgoalsnetwork-remixing-personal-learning-network
+  date_start: "2018-11-14"
   date_end: ""
-  date_start: "2018-03-01"
-  description: Formulated informed blockchain models, hypotheses, and use cases.
-  organization: edX
-  organization_url: https://www.edx.org
-  title: Blockchain Fundamentals
-  url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-- certificate_url: https://www.datacamp.com
-  date_end: "2017-12-21"
-  date_start: "2017-07-01"
-  description: ""
-  organization: DataCamp
-  organization_url: https://www.datacamp.com
-  title: 'Object-Oriented Programming in R: S3 and R6 Course'
-  url: ""
+  description: "Through the OLC Effective Practices program, the OLC community shares techniques, strategies and practices that have worked effectively in their institution or program. Effective practices are peer-reviewed and evaluated against OLC’s five pillars of quality in digital education: access, learning effectiveness, faculty satisfaction, student satisfaction and scalability."
 ---
