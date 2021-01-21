@@ -6,5 +6,5 @@
 Thumbs.db
 
 # For Netlify
-public
-resources
+/public/
+/resources/
