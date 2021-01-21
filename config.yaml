@@ -1,7 +1,7 @@
 theme: starter-academic
 title: Academic
 baseurl: 'https://dev.ryanstraight.com'
-copyright: ''
+copyright: '<a href="https://ryanstraight.com/license/">License</a> '
 enableGitInfo: no
 defaultContentLanguage: en
 hasCJKLanguage: no
