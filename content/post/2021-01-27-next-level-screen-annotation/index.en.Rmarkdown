@@ -1,6 +1,6 @@
 ---
 draft: true
-title: Next-Level Screen Annotation
+title: Next-Level In-Class Screen Annotation
 author: Ryan Straight
 date: '2021-01-27'
 slug: next-level-screen-annotation
