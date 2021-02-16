@@ -47,7 +47,7 @@ class: left, middle, inverse
 
 # HNRS 195H: Cyborgs and Transhumanism
 
-## Week 10
+## Cybernetics
 
 ## Dr. Ryan Straight
 
