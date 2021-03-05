@@ -1,5 +1,5 @@
 ---
-title: Blurring the Borders between Technology and the Self
+title: Blurring Borders Between Technology and Self
 event: Western Engineering Science & Technology (WEST) Club
 #event_url: https://example.org
 
