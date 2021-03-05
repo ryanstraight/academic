@@ -23,6 +23,7 @@ output:
     seal: no
     yolo: no
 always_allow_html: yes
+bibliography: "refs.bib"
 ---
 
 ```{r presentationsetup, include=FALSE}
@@ -30,6 +31,7 @@ knitr::opts_chunk$set(echo = FALSE)
 library(xaringan)
 library(xaringanExtra)
 library(fontawesome)
+library(RefManageR)
 
 # Xaringan extras
 xaringanExtra::use_extra_styles(
@@ -465,6 +467,47 @@ Beyond replacement of organs (like prosthetic eyes) there is augmenting the brai
 
 ## References
 
-For more on these topics, check out:
+For more on this topic, see:
 
-...
+```{r, load_refs, echo=FALSE, message=FALSE, error=FALSE}
+bib <- ReadBib("refs.bib", check = FALSE)
+ui <- "- "
+```
+
+```{r, print_refs, results='asis', echo=FALSE, warning=FALSE, message=FALSE}
+writeLines(ui)
+print(bib[key = "Haraway2006"], 
+  .opts = list(check.entries = FALSE, 
+               style = "html", 
+               bib.style = "authoryear"))
+writeLines(ui)
+print(bib[key = "Ihde2009"], 
+  .opts = list(check.entries = FALSE, 
+               style = "html", 
+               bib.style = "authoryear"))
+writeLines(ui)
+print(bib[key = "Ihde2012"], 
+  .opts = list(check.entries = FALSE, 
+               style = "html", 
+               bib.style = "authoryear"))
+writeLines(ui)
+print(bib[key = "Ihde2014"], 
+  .opts = list(check.entries = FALSE, 
+               style = "html", 
+               bib.style = "authoryear"))
+writeLines(ui)
+print(bib[key = "Kline1985"], 
+  .opts = list(check.entries = FALSE, 
+               style = "html", 
+               bib.style = "authoryear"))
+writeLines(ui)
+print(bib[key = "Rosenberger2015"], 
+  .opts = list(check.entries = FALSE, 
+               style = "html", 
+               bib.style = "authoryear"))
+writeLines(ui)
+print(bib[key = "Verbeek2008"], 
+  .opts = list(check.entries = FALSE, 
+               style = "html", 
+               bib.style = "authoryear"))
+```
