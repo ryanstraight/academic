@@ -35,7 +35,7 @@ I'd been wondering what I can do to improve my engagement with the on-screen con
 
 Luckily, digital artists have sussed out this problem ages ago when the drawing tablets like the Wacom came out.
 
-(This `r fontawesome::fa("arrow-down", fill = "Sienna")` is not a drawing monitor; this `r fontawesome::fa("arrow-down", fill = "Sienna")` is a drawing tablet. )
+(This  `r fontawesome::fa("arrow-down", fill = "Sienna")` is not a drawing monitor; this  `r fontawesome::fa("arrow-down", fill = "Sienna")` is a drawing tablet. )
 
 [![Drawing tablets have been around for a while](https://www.bhphotovideo.com/images/images2500x2500/wacom_pth451_intuos_pro_professional_pen_1002452.jpg)](https://www.bhphotovideo.com/c/replacement_for/1002452-REG/wacom_pth451_intuos_pro_professional_pen.html)
 
