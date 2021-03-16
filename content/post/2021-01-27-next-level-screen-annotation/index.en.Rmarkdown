@@ -41,7 +41,7 @@ Luckily, digital artists have sussed out this problem ages ago when the drawing 
 
 And these are great for particular things but (and I tried it) manipulating the Zoom annotation tools is not one of them.
 
-Enter the drawing *monitor*: think of it as a combination of the drawing tablet (above) and a touch screen. So you can do this kind of thing (_this_ `r fontawesome::fa("arrow-down", fill = "Sienna")` is a drawing monitor):
+Enter the drawing *monitor*: think of it as a combination of the drawing tablet (above) and a touch screen. So you can do this kind of thing (_this_  `r fontawesome::fa("arrow-down", fill = "Sienna")` is a drawing monitor):
 
 [![Now you can actually see what you're drawing.](https://media.giphy.com/media/lWdulVJxM5iDP9C4lg/giphy.gif)](https://gph.is/g/aQq2VBA)
 
@@ -80,7 +80,7 @@ Check this out: how's this for simple but super effective on-screen annotation?
 
 `r knitr::include_url('https://pkg.garrickadenbuie.com/xaringanExtra/scribble/')`
 
-This is the demo for the _scribble_ function in a Xaringan slide deck. Either click the `r fontawesome::fa("pencil-alt", fill = "Sienna")` or the `s` key on your keyboard while using the slide deck. Try flipping between slides. See how the annotations stay _only on the slide you scribbled on_? That's a huge improvement on using Zoom to annotate over a slide and then having those scribbles carry on into the next slide.
+This is the demo for the _scribble_ function in a Xaringan slide deck. Either click the  `r fontawesome::fa("pencil-alt", fill = "Sienna")` or the `s` key on your keyboard while using the slide deck. Try flipping between slides. See how the annotations stay _only on the slide you scribbled on_? That's a huge improvement on using Zoom to annotate over a slide and then having those scribbles carry on into the next slide.
 
 And big shout-out to [Matt Warkentin](https://github.com/mattwarkentin) for ["doing the heavy lifting"](https://twitter.com/grrrck/status/1371872765054230534) to get scribble to work!
 
