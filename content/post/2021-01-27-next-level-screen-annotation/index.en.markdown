@@ -75,7 +75,7 @@ That said, it struck me how janky the whole process was. Switching the annotatio
 
 So I tweeted about the lack of annotation-specific keyboard shortcuts and whoever runs the Zoom Twitter account actually replied, which was unexpected:
 
-{{&lt; tweet 1351910821325123592 &gt;}}
+{{% tweet "1351910821325123592" %}}
 
 Which I did. Who knows what will come of that. 🤷
 

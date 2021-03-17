@@ -28,6 +28,7 @@ projects: []
 ---
 
 ```{r applause-button, echo=FALSE}
+# remotes::install_github("gadenbuie/applause")
 applause::button(
   color = "#4682b4",
   style="font-size:14px;
@@ -77,7 +78,9 @@ That said, it struck me how janky the whole process was. Switching the annotatio
 
 So I tweeted about the lack of annotation-specific keyboard shortcuts and whoever runs the Zoom Twitter account actually replied, which was unexpected:
 
-{{< tweet 1351910821325123592 >}}
+```{r echo=FALSE}
+blogdown::shortcode('tweet', '1351910821325123592')
+```
 
 Which I did. Who knows what will come of that. `r emo::ji("shrug")`
 
