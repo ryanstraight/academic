@@ -42,7 +42,7 @@ applause::button(
 
 What can online teachers and remote workers learn from streamers? Quite a bit, it turns out.
 
-I'd been wondering what I can do to improve my engagement with the on-screen content during live class sessions. Like many, I'm using Zoom (which I've talked about in terms of [using OBS to spice up your Zoom calls]({{< ref "post/2020-03-14-zoom-and-obs/index.md" >}})) and recently shared a bit about using a [drawing monitor to really up your annotation game]({{<ref "post/2021-03-21-next-level-screen-annotation/index.md" >}}).
+I'd been wondering what I can do to improve my engagement with the on-screen content during live class sessions. Like many, I'm using Zoom (which I've talked about in terms of [using OBS to spice up your Zoom calls](../zoom-and-obs/) and recently shared a bit about using a [drawing monitor to really up your annotation game](../next-level-screen-annotation/).
 
 So what's next on my list? Taking all those keyboard shortcuts and mouse clicks and moving them over to a dedicated device that's made specifically for it: the Elgato Stream Deck.
 
