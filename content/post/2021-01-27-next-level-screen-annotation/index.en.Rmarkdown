@@ -18,7 +18,7 @@ tags:
 subtitle: ''
 summary: 'Using a *drawing monitor* and `xaringanExtra` for online teaching.'
 authors: []
-lastmod: '2021-01-20T20:35:04-07:00'
+lastmod: '2021-03-16T20:35:04-07:00'
 featured: no
 image:
   caption: ''

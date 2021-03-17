@@ -1,0 +1,112 @@
+---
+draft: TRUE
+title: Using a Stream Deck for Online Teaching
+author: Ryan Straight
+date: '2021-03-21'
+slug: stream-deck-for-teaching
+categories:
+  - Teaching
+tags:
+  - "covid-19"
+  - edtech
+  - innovation
+  - mobile learning
+  - remote work
+  - teaching
+  - stream deck
+subtitle: ''
+summary: 'Using an *Elgato Stream Deck* for managing your online experience.'
+authors: []
+lastmod: '2021-03-20T20:35:04-07:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+```{r setup-and-applause-button, echo=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+applause::button(
+  color = "#4682b4",
+  style="font-size:14px;
+         margin:30px 20px 20px 20px;
+         float:left;"
+)
+```
+
+<blockquote style="font-size: 1.0em;color:#4682b4;padding-left:85px;">If you found this useful, how about a round of applause?</blockquote>
+
+---
+
+What can online teachers and remote workers learn from streamers? Quite a bit, it turns out.
+
+I'd been wondering what I can do to improve my engagement with the on-screen content during live class sessions. Like many, I'm using Zoom (which I've talked about in terms of [using OBS to spice up your Zoom calls]({{< ref "post/2020-03-14-zoom-and-obs/index.md" >}})) and recently shared a bit about using a [drawing monitor to really up your annotation game]({{<ref "post/2021-03-21-next-level-screen-annotation/index.md" >}}).
+
+So what's next on my list? Taking all those keyboard shortcuts and mouse clicks and moving them over to a dedicated device that's made specifically for it: the Elgato Stream Deck.
+
+## What is an Elgato Stream Deck?
+
+Described by Elgato, the Stream Deck consists of:
+
+>15 LCD keys poised to launch unlimited actions eliminate the need to map and memorize keyboard shortcuts. One-touch, tactile operation lets you switch scenes, launch media, adjust audio and more, while visual feedback confirms your every command. Traditionally this level of control was exclusive to mainstream entertainment broadcasters. Now, it’s at your fingertips.^[https://www.elgato.com/en/stream-deck]
+
+(This  `r fontawesome::fa("arrow-down", fill = "Sienna")` is the one I have. I figured the Mini (six keys) would be too small and the XL (with 32 keys) would be too big. So, I went for the Goldilocks choice.)
+
+[![The 15-key Elgato Stream Deck](https://www.elgato.com/themes/custom/smalcode/image/products/streaming-deck/personalized_photo.jpg)](https://www.elgato.com/en/stream-deck)
+
+It's basically the industry standard device game streamers use to manipulate their on-screen elements and audio. I also use the [Cam Link 4k](https://www.elgato.com/en/cam-link-4k) to turn my 4k mirrorless camera into a webcam but that's another post.
+
+## What do I do with mine?
+
+### First: Profiles
+
+I despise having to go back and forth between folders when I'm bouncing around different applications. (Yes, I know, multitasking isn't really a thing.) 
+
+### Second: Actions
+
+Stream Deck comes with a lot of great actions built-in but the true power comes from the community building what the community needs. Here's a list of the different actions I have installed:
+
++ Analog Clock: puts an analog clock on a button, unsurprisingly.
++ Audio Meter: Shows your audio levels for both playback and recording.
++ CPU: Displays current CPU usage.
++ Counter: Tracks the number of times you press a key.
++ Dice: Just rolls some virtual dice. Handy. Neat.
++ iCUE: Controls your iCUE computer case lighting.
++ LIFX Control: We have LIFX lights and this is an easy way to change their colors, brightness, and so on.
++ OBS Studio: Switch between scenes and do everything you expect with OBS.
++ Speed Test: A one-button Ookla Speedtest.
++ Spotify Integration: Used to control Spotify and also display the current track on a key.
++ Stopwatch: Precisely what it sounds like.
++ Toggl: Easy one-button tracking of projects and tasks.
++ VLC Remote: Specifically controls the VLC player as opposed to the general media controls on your device.
++ Voicemod: Easily change your voice. Fun when combined with something like Snap Camera.
++ Windows Mover & Resizer: Automatically control window placement and whatnot. Works with virtual desktops!
++ Zoom Plugin: Control your Zoom meeting with a button-press. Mute, disable video, leave a meeting, mute everyone, and more.
+
+Do you need all those? Of course not. But there's no limit to how many screens you can have on your Stream Deck, so why not? 
+
+## Specifics
+
+While a lot of the actions listed above are great, most of them are really just for me and making my life easier. Below, I'll demonstrate the different specific actions that are most useful in an online teaching or remote work situation.
+
+### Control Zoom
+
+```{r zoom-screen, fig.retina = 3}
+# Screenshot of the Zoom screen
+knitr::include_graphics("zoom.png")
+```
+
+Here you see my Zoom screen. I'm right handed, so my Stream Deck is on the left side of my desk (as my mouse is on the right), hence the buttons I use most being what I can easily reach out and hit (I most often mute and unmute myself, so when grabbing the Stream Deck, my left thumb naturally falls to that button). The buttons are spaced out in this particular configuration so I'm less likely to accidentally hit one.
+
+### Control RStudio
+
+```{r rstudio-screen, fig.retina = 3, eval=FALSE}
+# Screenshot of the RStudio screen
+knitr::include_graphics("rstudio.png")
+```
+
+If you've read this website for any length of time you know that I've become an utter R convert over the past few years. I do virtually everything in RMarkdown (like this website!). So, I spend a lot of time in RStudio. It's only natural I have a screen devoted to that. I forget a lot of the keyboard shortcuts beyond "insert code chunk" and "insert pipe," so this makes easy work of what I do most.
+
+### ...
