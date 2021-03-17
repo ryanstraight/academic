@@ -40,7 +40,7 @@ If you found this useful, how about a round of applause?
 
 Remote teaching during the SARS-CoV2 pandemic isn’t much different from what I normally do, insofar as I’m still teaching from my home office to students that (mostly) were planning on being online, regardless.
 
-I’d been wondering what I can do to improve my engagement with the on-screen content during live class sessions. Like many, I’m using Zoom (which I’ve talked about in terms of \[using OBS to spice up your Zoom calls\]({{&lt; ref “post/2020-03-14-zoom-and-obs/index.md” &gt;}})) and, while I think the annotation tools provided are *decent* if a little clunky, I can’t bear trying to “write” on a screen using a mouse.
+I’d been wondering what I can do to improve my engagement with the on-screen content during live class sessions. Like many, I’m using Zoom (which I’ve talked about in terms of [using OBS to spice up your Zoom calls](../2020-03-14-zoom-and-obs/) and, while I think the annotation tools provided are *decent* if a little clunky, I can’t bear trying to “write” on a screen using a mouse.
 
 ## The Drawing Monitor
 
