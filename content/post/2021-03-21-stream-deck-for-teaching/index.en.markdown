@@ -10,7 +10,8 @@ tags:
   - "covid-19"
   - edtech
   - innovation
-  - mobile learning
+  - OBS
+  - Zoom
   - remote work
   - teaching
   - stream deck
@@ -59,7 +60,7 @@ It’s basically the industry standard device game streamers use to manipulate t
 
 ### First: Profiles
 
-I despise having to go back and forth between folders when I’m bouncing around different applications. (Yes, I know, multitasking isn’t really a thing.)
+I despise having to go back and forth between folders when I’m bouncing around different applications. (Yes, I know, multitasking isn’t really a thing.) When I’m in RStudio, for example, I know I won’t be rolling a die or doing a speed test (more on those below), so I have my Stream Deck automatically switch to my RStudio profile whenever RStudio is open. Same with Zoom: when I have a Zoom window selected, there’s no reason I’d need to paste in a pre-made RMarkdown code chunk, so all that’s on the screen are Zoom tools. And again, more on that below.
 
 ### Second: Actions
 
@@ -86,7 +87,7 @@ Do you need all those? Of course not. But there’s no limit to how many screens
 
 ## Specifics
 
-While a lot of the actions listed above are great, most of them are really just for me and making my life easier. Below, I’ll demonstrate the different specific actions that are most useful in an online teaching or remote work situation.
+While a lot of the actions listed above are great, most of them are really just for me and making my life easier, not necessarily for teaching. Below, I’ll demonstrate the different specific actions that are most useful in an online teaching or remote work situation.
 
 ### Control Zoom
 
@@ -98,6 +99,30 @@ Here you see my Zoom screen. I’m right handed, so my Stream Deck is on the lef
 
 If you’ve read this website for any length of time you know that I’ve become an utter R convert over the past few years. I do virtually everything in RMarkdown (like this website!). So, I spend a lot of time in RStudio. It’s only natural I have a screen devoted to that. I forget a lot of the keyboard shortcuts beyond “insert code chunk” and “insert pipe,” so this makes easy work of what I do most.
 
-### …
+### OBS
+
+It’s no secret by now that Open Broadcast Software (OBS) is a killer app in the online streaming world and that goes doubly for really upping your online teaching. The sky really is the limit when considering what all you can do with OBS. If you can imagine it, it’s probably possible.
+
+So what’s my default OBS collection of scenes? I’ll explain what these buttons do, going row-by-row left-to-right from the top left:
+
+1.  Blank: this completely removes all video and image sources from the video feed. It’s like mute for your camera without turning your camera off in Zoom (or whatever app you’re using). Audio isn’t an issue for me here as the OBS virtual camera is video *only*.
+2.  Please Stand By: this tells folks that yes, I’m in the meeting, but I’m not quite ready yet or I’ve stepped away for just a second. It implies that I won’t reply if you ask me something.
+3.  Coffee BRB: exactly what it sounds like: I went to refill my coffee, I’ll be right back.
+4.  …
+5.  Koi: stock footage of koi fish in a pond. Just a nice relaxing thing to include on people’s screens during meetings.
+6.  Webcam full: just the webcam, full-sized. No overlays, crops, or logos.
+7.  Block A: places a University of Arizona logo in the corner of my webcam. Good for meetings where my position at the university is relevant and perhaps not obvious (like a meeting with my Arizona colleagues) or where I just want to make sure it’s clear the recording is “branded” (like a class meeting).
+8.  Applause: a repeating gif of the the Monty Python’s Flying Circus stock footage of women in an audience applauding.
+9.  Thumbs-up: a big sticker of a cartoon thumbs-up overlayed on my camera.
+10. Bob Ross: a repeating gif of Bob Ross petting a baby deer. Self explanatory, really. (Who *doesn’t* want to see that?)
+11. Mute: this is actually the Zoom shortcut that mutes Zoom, as that’s where I use OBS 99% of the time. Again, the OBS virtual camera is video *only* so audio must be dealt with otherwise.
+12. …
+13. …
+14. 50/50: puts my webcam on one half of the screen and a particular window on the other. Good for quickly pointing things out without having to switch screen share sources in Zoom, for example.
+15. Gump: a repeating gif of Forrest Gump waving from his shrimping boat. Used when leaving meetings.
+
+Of course, if you *are* teaching with something like Zoom, the dedicated recording/feed of a shared screen will make some of the OBS picture-in-picture scenes a tad redundant (because why degrade the quality when you can keep both at full?) but if you’re just streaming can’t share a screen for whatever reason (like if you’re planning on putting the video on YouTube and you only *have* a single video to work with), it’s a great option.
+
+So, was this helpful? I hope so! I’m always looking for new and innovative ways to up the various aspects of my online teaching game and I always welcome suggestions!
 
 [^1]: https://www.elgato.com/en/stream-deck
