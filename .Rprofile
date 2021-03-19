@@ -22,3 +22,10 @@ options(
 
 # fix Hugo version
 options(blogdown.hugo.version = "0.80.0")
+
+# Prompt tweaks and number length
+options(max.print=100)
+options(width = 80)
+options(scipen=999)
+
+

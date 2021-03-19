@@ -121,6 +121,13 @@ The only bummer about `anicon` and using it for FontAwesome icons is that it doe
 
 …
 
+## Citation, `papaja`, and BetterBibTeX
+
+I use Zotero and, since I do a lot of writing in APA format, I use the `papaja` package to make that easier. As such, I use BibTeX (unsurprisingly)
+
+-   Quick copy from Zotero
+-   Different in-text citation forms
+
 ## All things [Xaringan: Presentation Ninja](https://github.com/yihui/xaringan)
 
 I use the `xaringan` package a *lot*. I gave up Powerpoint years ago in favor of something that’s lightweight, can include native R calculations and code, and is mobile, accessible, and responsive.
@@ -219,3 +226,11 @@ htmltools::tagList(
 # The sainted scribble function I keep talking about.
 xaringanExtra::use_scribble()     # turns on scribble, built-in annotation
 ```
+
+## Supplemental
+
+This stuff isn’t R-related, specifically, but makes working with R a lot easier.
+
+### [Copycat](https://chrome.google.com/webstore/detail/copycat/jdjbiojkklnaeoanimopafmnmhldejbg)
+
+A Chrome extension that allows for quick copying of URLs, text, et cetera, as markdown syntax.
