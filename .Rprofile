@@ -28,4 +28,6 @@ options(max.print=100)
 options(width = 80)
 options(scipen=999)
 
-
+# Chrome printing to PDF
+Sys.setenv(PAGEDOWN_CHROME = "%AppData%/Local/Vivaldi/Application/vivaldi.exe")
+Sys.setenv(CHROMOTE_CHROME = "%AppData%/Local/Vivaldi/Application/vivaldi.exe")
