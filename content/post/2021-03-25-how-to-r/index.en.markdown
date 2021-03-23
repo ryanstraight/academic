@@ -28,6 +28,9 @@ projects: []
 <link href="{{< blogdown/postref >}}index.en_files/font-awesome-animation/font-awesome-animation-emi.css" rel="stylesheet" />
 <script src="{{< blogdown/postref >}}index.en_files/fontawesome/js/fontawesome-all.min.js"></script>
 
+<link href="{{< blogdown/postref >}}index.en_files/font-awesome/css/fontawesome-all.min.css" rel="stylesheet" />
+<link href="{{< blogdown/postref >}}index.en_files/font-awesome/css/fontawesome-all.min.css" rel="stylesheet" />
+
 <applause-button style="width: 50px; height: 50px;font-size:14px;&#10;         margin:30px 20px 20px 20px;&#10;         float:left;" color="#4682b4"></applause-button>
 
 <blockquote style="font-size: 1.0em;color:#4682b4;padding-left:85px;">
@@ -115,18 +118,25 @@ To use [`anicon`](https://anicon.netlify.app/):
 
 `anicon::nia("Some text!", animate="wrench")`: <span class=" faa-wrench animated " style=" display: -moz-inline-stack; display: inline-block; transform: rotate(0deg);">Some text!</span>
 
-The only bummer about `anicon` and using it for FontAwesome icons is that it doesn’t play well in Blogdown in my experience. The text works great, though.
+The only bummer about `anicon` and using it for FontAwesome icons is that it doesn’t play well in Blogdown in my experience. The text works great, though. Xaringan, either. Best to use the `icon` package for static icons.
 
-## Project management: `ProjectTemplate` and `Dataspice`
+## Project management: `ProjectTemplate`
 
-…
+Project management has always been my downfall in terms of finding the solution that works just the way I want it to. (And, yes, I know that *perfect* is the enemy of *good* but I have to procrastinate somehow, don’t I?) I really like `ProjectTemplate`, though. I typically use the minimal version of the template and it helps keep me organized and on a standard workflow. It’s easy to put down and pick back up later, as well.
 
 ## Citation, `papaja`, and BetterBibTeX
 
-I use Zotero and, since I do a lot of writing in APA format, I use the `papaja` package to make that easier. As such, I use BibTeX (unsurprisingly)
+I use Zotero and, since I do a lot of writing in APA format, I use the `papaja` package to make that easier. As such, I use BibTeX (unsurprisingly).
 
--   Quick copy from Zotero
--   Different in-text citation forms
+### Quick copy from Zotero
+
+Took me a while to learn this but as my Zotero library has thousands of entries, I don’t always use the full library as a .bib file (for obvious reasons). As I’m also constantly adding new entries and I don’t want to have to export a .bib every time, the *Quick Copy* option is as I can easily throw a new BibTeX entry into a .bib file in RStudio.
+
+You can change the *Quick Copy* formatting by going to `Edit` <i class="fas  fa-arrow-right "></i> `Preferences` <i class="fas  fa-arrow-right "></i> `Export` and changing the Default Format to *BetterBibTeX*. Voila, you can start using the citation key.
+
+### Different in-text citation forms
+
+While I love doing everything like this in plain text, I can never remember how the different in-text citations work. So here’s a cheatsheet:
 
 ## All things [Xaringan: Presentation Ninja](https://github.com/yihui/xaringan)
 
