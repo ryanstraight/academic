@@ -1,8 +1,8 @@
 ---
-draft: TRUE
+draft: false
 title: How to R
 author: Ryan Straight
-date: '2021-03-25'
+date: '2021-03-24'
 slug: how-to-r
 categories:
   - Code
@@ -12,9 +12,9 @@ tags:
   - RMarkdown
   - "how-to"
 subtitle: ''
-summary: 'I use `R` a lot. This is my collection of how-tos.'
+summary: 'I use `R` a lot. This is my collection of how-tos, tricks, and favorite bits.'
 authors: []
-lastmod: '2021-03-18T20:35:04-07:00'
+lastmod: '2021-03-24T20:35:04-07:00'
 featured: no
 image:
   caption: ''
@@ -22,7 +22,6 @@ image:
   preview_only: no
 projects: []
 bibliography: ["example.bib"]
-biblio-style: "apalike"
 ---
 
 <link href="{{< blogdown/postref >}}index.en_files/applause-button/applause-button.css" rel="stylesheet" />
@@ -77,7 +76,51 @@ Function/value/variable naming:
 
 ## [formatR](https://yihui.org/formatr/)
 
-A great way to keep your code looking tidy. Remember: space is your friend!
+A great way to keep your code looking tidy. Remember: space is your friend! The example Yihui Xie uses on his website is this poorly organized code:
+
+``` r
+## comments are retained;
+# a comment block will be reflowed if it contains long comments;
+#' roxygen comments will not be wrapped in any case
+1+1
+
+if(TRUE){
+x=1  # inline comments
+}else{
+x=2;print('Oh no... ask the right bracket to go away!')}
+1*3 # one space before this comment will become two!
+2+2+2    # only 'single quotes' are allowed in comments
+
+lm(y~x1+x2, data=data.frame(y=rnorm(100),x1=rnorm(100),x2=rnorm(100)))  ### a linear model
+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1  # comment after a long line
+## here is a long long long long long long long long long long long long long comment that may be wrapped
+```
+
+And then, after using `formatR`:
+
+``` r
+## comments are retained; a comment block will be
+## reflowed if it contains long comments;
+#' roxygen comments will not be wrapped in any case
+1 + 1
+
+if (TRUE) {
+    x = 1  # inline comments
+} else {
+    x = 2
+    print("Oh no... ask the right bracket to go away!")
+}
+1 * 3  # one space before this comment will become two!
+2 + 2 + 2  # only 'single quotes' are allowed in comments
+
+lm(y ~ x1 + x2, data = data.frame(y = rnorm(100), x1 = rnorm(100), 
+    x2 = rnorm(100)))  ### a linear model
+1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 
+    1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1  # comment after a long line
+## here is a long long long long long long long long
+## long long long long long comment that may be
+## wrapped
+```
 
 ## Knitr
 
@@ -85,9 +128,7 @@ There’s so much that `knitr` can do and I find myself having to over and over 
 
 Including an image:
 
-``` r
-knitr::include_graphics("image.ext")
-```
+    knitr::include_graphics("image.ext")
 
 or
 
@@ -144,6 +185,8 @@ While I love doing everything like this in plain text, I can never remember how 
 
 My YAML includes: `bibliography: ["example.bib"]`
 
+Depending on what RMarkdown template/document you’re using, you can also change the bibliography style.
+
 I have this BibTeX entry in the `.bib` file:
 
 ``` bibtex
@@ -166,7 +209,8 @@ Obviously, the abstract is optional but I’m leaving here for demonstration pur
 `[@Ash2017]` gives you what you saw above: (Ash et al. 2017)  
 `[@Ash2017, pp. 22]` gives you: (Ash et al. 2017, 22)  
 `[-@Ash2017]` removes the author: (2017)  
-`@Ash2017` (without the brackets) gives you: Ash et al. (2017)
+`@Ash2017` (without the brackets) gives you: Ash et al. (2017)  
+`@Ash2017 [pp. 22]` gives you: Ash et al. (2017, 22).
 
 If you wanted to include a citation in the bibliography but not actually cite it in the text, just add this to the YAML:
 
@@ -310,7 +354,11 @@ New File (1)(1)(1).PDF
 image.jpg  
 RS-here are my edits to yourfile.docx
 
-Help Today-You be kind to Tomorrow-You by using proper naming.
+Help Today-You be kind to Tomorrow-You by using proper naming!
+
+------------------------------------------------------------------------
+
+Eventually, I’ll do an entire post about my favorite RMarkdown templates for a variety of uses. Until then, hopefully this is helpful!
 
 ## References
 
