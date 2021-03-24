@@ -21,6 +21,8 @@ image:
   focal_point: ''
   preview_only: no
 projects: []
+bibliography: ["example.bib"]
+biblio-style: "apalike"
 ---
 
 <link href="{{< blogdown/postref >}}index.en_files/applause-button/applause-button.css" rel="stylesheet" />
@@ -40,6 +42,8 @@ If you found this useful, how about a round of applause?
 ------------------------------------------------------------------------
 
 I forget how to do a lot in R when I only do it once every year or two. I also wanted a place to keep track of my favorite packages. So:
+
+{{% toc %}}
 
 ## Updating R with `installr`
 
@@ -118,7 +122,7 @@ To use [`anicon`](https://anicon.netlify.app/):
 
 `anicon::nia("Some text!", animate="wrench")`: <span class=" faa-wrench animated " style=" display: -moz-inline-stack; display: inline-block; transform: rotate(0deg);">Some text!</span>
 
-The only bummer about `anicon` and using it for FontAwesome icons is that it doesn’t play well in Blogdown in my experience. The text works great, though. Xaringan, either. Best to use the `icon` package for static icons.
+Best to use the `icon` package for static icons.
 
 ## Project management: `ProjectTemplate`
 
@@ -136,7 +140,46 @@ You can change the *Quick Copy* formatting by going to `Edit` <i class="fas  fa-
 
 ### Different in-text citation forms
 
-While I love doing everything like this in plain text, I can never remember how the different in-text citations work. So here’s a cheatsheet:
+While I love doing everything like this in plain text, I can never remember how the different in-text citations work. So here’s a cheatsheet. We’ll be using (Ash et al. 2017) as the example.
+
+My YAML includes: `bibliography: ["example.bib"]`
+
+I have this BibTeX entry in the `.bib` file:
+
+``` bibtex
+@article{Ash2017,
+  title = {Unit, Vibration, Tone: A Post-Phenomenological Method for Researching Digital Interfaces},
+  author = {Ash, James and Anderson, Ben and Gordon, Rachel and Langley, Paul},
+  year = {2017},
+  pages = {147447401772655},
+  issn = {1474-4740},
+  doi = {10.1177/1474474017726556},
+  abstract = {Digital interfaces, in the form of websites, mobile apps and other platforms, now mediate user experiences with a variety of economic, cultural and political services and products. To study these digital mediations, researchers have to date followed a range of methodological strategies including the modification of pre-existing qualitative research methods, such as content analysis, discourse analysis and semiotics, among many others, and an experimentation with new methods designed to make visible the operation of data aggregation, analytics and algorithms that are hidden from users. Building upon, while distinct from these strategies, the article sets out a post-phenomenological approach to studying interfaces, websites and apps that explicitly interrogates how they appear as objects. In doing so, the article provides a response to a problem that animates contemporary cultural geography: that new cultural objects are emerging which place in question the habits and practices of analysis that composed the `new' cultural geography. To do this, the paper develops the concepts of unit, vibration and tone to unpack interfaces as sets of entities that work together to shape the experiences and responses of users. As such, the article provides a methodological vocabulary for the analysis of how interfaces operate to modulate user response and action on a series of habitual and un-reflected upon levels and thereby to create outcomes that suit their owners and operators.},
+  file = {D\:\\Sync\\Work\\School\\Articles\\Cultural Geographies\\Ash et al\\Ash et al. - 2017 - Unit, vibration, tone a post-phenomenological method for researching digital interfaces.pdf},
+  journal = {Cultural Geographies},
+  keywords = {digital geographies,digital methods,interfaces,materiality,post-phenomenology}
+}
+```
+
+Obviously, the abstract is optional but I’m leaving here for demonstration purposes. For the different formats of in-text citation:
+
+`[@Ash2017]` gives you what you saw above: (Ash et al. 2017)  
+`[@Ash2017, pp. 22]` gives you: (Ash et al. 2017, 22)  
+`[-@Ash2017]` removes the author: (2017)  
+`@Ash2017` (without the brackets) gives you: Ash et al. (2017)
+
+If you wanted to include a citation in the bibliography but not actually cite it in the text, just add this to the YAML:
+
+``` yaml
+nocite: |
+  @Ash2017
+```
+
+Finally, just place a `## References` header at the bottom of your file and voila, instant bibliography!
+
+### `papaja`
+
+For doing more nuanced work, I use the [`papaja`](https://github.com/crsh/papaja) package to create APA-formatted papers. I highly encourage folks–especially students that produce APA-formatted documents frequently–to check it out. It’s so handy.
 
 ## All things [Xaringan: Presentation Ninja](https://github.com/yihui/xaringan)
 
@@ -159,7 +202,7 @@ output:
        </div>
 ```
 
-Then, add this to your `custom.css` and alter to your liking:
+Then, add this to your `custom.css` (or whatever custom CSS file you’re using) and alter to your liking:
 
 ``` css
 .remark-slide-number {
@@ -191,6 +234,8 @@ This allows you to put verbatim in-line R code anywhere in your presentation. Yo
 `` `r cor(x, y, method = c('pearson'))` ``
 ```
 
+In the text, this will appear as `` `r cor(x, y, method = c('pearson'))` ``.
+
 ### Start with a *Please Stand By* slide
 
 Use this directly after your R setup code chunk:
@@ -206,7 +251,7 @@ This sets your very first slide full screen as:
 
 ![](https://media.giphy.com/media/CdhxVrdRN4YFi/giphy.gif)<!-- -->
 
-## xaringanExtra
+## [`xaringanExtra`](https://pkg.garrickadenbuie.com/xaringanExtra/)
 
 I recently wrote about using the `scribble()` function from `xaringanExtra`, which is orders of magnitude easier to use when annotating a slide deck and sharing via Zoom. Other functions from the package I really like:
 
@@ -223,7 +268,6 @@ xaringanExtra::use_extra_styles(  # higlights code
 )
 
 # Turns on clipboard options. Great for giving code to students.
-xaringanExtra::use_clipboard()    # turns on the clipboard option
 htmltools::tagList(
   xaringanExtra::use_clipboard(
     button_text = "<i class=\"fa fa-clipboard\"></i>",
@@ -239,8 +283,43 @@ xaringanExtra::use_scribble()     # turns on scribble, built-in annotation
 
 ## Supplemental
 
-This stuff isn’t R-related, specifically, but makes working with R a lot easier.
+This stuff isn’t R-related, specifically, but makes working with R a lot easier. I’ll probably add to this as I think of things.
 
 ### [Copycat](https://chrome.google.com/webstore/detail/copycat/jdjbiojkklnaeoanimopafmnmhldejbg)
 
-A Chrome extension that allows for quick copying of URLs, text, et cetera, as markdown syntax.
+A Chrome extension that allows for quick copying of URLs, text, et cetera, as markdown syntax. When creating a list of links or resources, for example, this is very, very handy. It speeds things up considerably to just be able to copy and paste without thinking about the markdown syntax.
+
+### Proper file naming
+
+Follow the advice of [Jenny Bryan](https://jennybryan.org) and use filenames that are:
+
+1.  machine readable
+2.  human readable
+3.  play well with default ordering
+
+Her [classic slide deck](http://www2.stat.duke.edu/~rcs46/lectures_2015/01-markdown-git/slides/naming-slides/naming-slides.pdf) on the topic is a wealth of guidance. In short:
+
+**Good**:  
+2021-03-13\_blogpost\_how-to-r.Rmd  
+2021-03-21\_blogpost\_stream-deck-for-online-teaching.Rmd  
+2021-04-04\_blogpost\_something-i-may-write-who-knows.Rmd
+
+**Bad**:  
+draft How to R.Rmd  
+New File (1)(1)(1).PDF  
+image.jpg  
+RS-here are my edits to yourfile.docx
+
+Help Today-You be kind to Tomorrow-You by using proper naming.
+
+## References
+
+<div id="refs" class="references csl-bib-body hanging-indent">
+
+<div id="ref-Ash2017" class="csl-entry">
+
+Ash, James, Ben Anderson, Rachel Gordon, and Paul Langley. 2017. “Unit, Vibration, Tone: A Post-Phenomenological Method for Researching Digital Interfaces.” *Cultural Geographies*, 147447401772655. <https://doi.org/10.1177/1474474017726556>.
+
+</div>
+
+</div>
