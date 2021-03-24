@@ -58,22 +58,6 @@ updateR() # this will open dialog boxes to take you through the steps.
 
 You should run it in the Rgui, not in RStudio. And that’s it! 🥳
 
-## Proper naming
-
-Chronological order template:
-
-`YYYY-MM-DD_Project-title_Specific-file_Version.ext`
-
-Logical order:
-
-    01_Filename-title-that-is-descriptive.ext
-    02_Filename-title-that-is-descriptive.ext
-    90_Filename-title-that-is-descriptive.ext
-
-Function/value/variable naming:
-
-`variable.name` **not** `variable_name`
-
 ## [formatR](https://yihui.org/formatr/)
 
 A great way to keep your code looking tidy. Remember: space is your friend! The example Yihui Xie uses on his website is this poorly organized code:
@@ -347,6 +331,20 @@ Her [classic slide deck](http://www2.stat.duke.edu/~rcs46/lectures_2015/01-markd
 2021-03-13\_blogpost\_how-to-r.Rmd  
 2021-03-21\_blogpost\_stream-deck-for-online-teaching.Rmd  
 2021-04-04\_blogpost\_something-i-may-write-who-knows.Rmd
+
+Chronological order template:
+
+`YYYY-MM-DD_Project-title_Specific-file_Version.ext`
+
+Logical order:
+
+    01_Filename-title-that-is-descriptive.ext
+    02_Filename-title-that-is-descriptive.ext
+    90_Filename-title-that-is-descriptive.ext
+
+Function/value/variable naming:
+
+`variable.name` **not** `variable_name`
 
 **Bad**:  
 draft How to R.Rmd  
