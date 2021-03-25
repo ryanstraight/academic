@@ -60,7 +60,7 @@ You should run it in the Rgui, not in RStudio. And that’s it! 🥳
 
 ## [formatR](https://yihui.org/formatr/)
 
-A great way to keep your code looking tidy. Remember: space is your friend! The example Yihui Xie uses on his website is this poorly organized code:
+A great way to keep your code looking tidy. Remember: space is your friend! The example [Yihui Xie uses on his website](https://yihui.org/formatr/#2-reformat-r-code) is this poorly organized code:
 
 ``` r
 ## comments are retained;
@@ -120,6 +120,8 @@ or
 knitr::include_graphics("url")
 ```
 
+The various [R code chunk options](https://yihui.org/knitr/options/) are handy to know, as well. This is also related to the verbatim code bit below, as it’s [a knitr option](https://yihui.org/en/2017/11/knitr-verbatim-code-chunk/).
+
 ## Installing and loading packages
 
 I give Rmd files to my students to use and practice with. This makes sure they don’t run into issues with not having packages installed:
@@ -149,9 +151,9 @@ To use [`anicon`](https://anicon.netlify.app/):
 
 Best to use the `icon` package for static icons.
 
-## Project management: `ProjectTemplate`
+## Project management: [`ProjectTemplate`](http://projecttemplate.net)
 
-Project management has always been my downfall in terms of finding the solution that works just the way I want it to. (And, yes, I know that *perfect* is the enemy of *good* but I have to procrastinate somehow, don’t I?) I really like `ProjectTemplate`, though. I typically use the minimal version of the template and it helps keep me organized and on a standard workflow. It’s easy to put down and pick back up later, as well.
+Project management has always been my downfall in terms of finding the solution that works just the way I want it to. (And, yes, I know that *perfect* is the enemy of *good* but I have to procrastinate somehow, don’t I?) I really like [`ProjectTemplate`](http://projecttemplate.net), though. I typically use the minimal version of the template and it helps keep me organized and on a standard workflow. It’s easy to put down and pick back up later, as well.
 
 ## Citation, `papaja`, and BetterBibTeX
 
